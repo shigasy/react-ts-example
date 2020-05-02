@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Main from './Main';
 import Counter from './Counter';
+import Timer from './Timer';
 
 const App = () => (
   <div className="App">
@@ -22,6 +23,7 @@ const App = () => (
     </header>
     <Main />
     <Counter />
+    <Timer />
   </div>
 );
 
