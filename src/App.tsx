@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Main from './Main';
 
 const App = () => (
   <div className="App">
@@ -18,6 +19,7 @@ const App = () => (
         Learn React
       </a>
     </header>
+    <Main />
   </div>
 );
 
