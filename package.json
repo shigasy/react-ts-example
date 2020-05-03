@@ -71,10 +71,12 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+      "eslint --fix",
+      "git add"
     ],
     "src/**/*.css": [
-      "stylelint --fix"
+      "stylelint --fix",
+      "git add"
     ]
   }
 }
