@@ -5,6 +5,7 @@ import Counter from './Counter';
 import Timer from './Timer';
 import { CharacterListFC, CounterFC, TimerFC } from './components/index';
 import { Character } from './types/character';
+import TimerContainerForm from './formal/container/TimerContainerForm';
 
 const Characters: Character[] = [
   {
@@ -22,6 +23,8 @@ const Characters: Character[] = [
 
 const App = () => (
   <div className="App">
+    <h1>FC container</h1>
+    <TimerContainerForm />
     <h1>Functional Components</h1>
     <CharacterListFC characters={Characters} school="これ" />
     <CounterFC />
