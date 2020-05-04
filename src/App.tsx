@@ -1,39 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Main from './Main';
-import Counter from './Counter';
-import Timer from './Timer';
-import { CharacterListFC, CounterFC, TimerFC } from './components/index';
-import { Character } from './types/character';
-import TimerContainerForm from './formal/container/TimerContainerForm';
-
-const Characters: Character[] = [
-  {
-    id: 1,
-    name: '名前1',
-    age: 16,
-    height: 151,
-  },
-  {
-    id: 2,
-    name: '名前2',
-    age: 20,
-  },
-];
+import About from './pages/About';
+import Home from './pages/Home';
 
 const App = () => (
   <div className="App">
-    <h1>FC container</h1>
-    <TimerContainerForm />
-    <h1>Functional Components</h1>
-    <CharacterListFC characters={Characters} school="これ" />
-    <CounterFC />
-    <TimerFC />
+    <Router>
+      <h1>Link</h1>
+      <Link to="/">Home</Link>
+      <Link to="/About">About</Link>
 
-    <h1>class Components</h1>
-    <Main />
-    <Counter />
-    <Timer />
+      <h1>Top page route</h1>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </Switch>
+    </Router>
   </div>
 );
 
