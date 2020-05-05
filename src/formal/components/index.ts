@@ -1,1 +1,1 @@
-export { default as TimerComponentsFormal } from './TimerComponentsFormal'
+export { default as TimerComponentsFormal } from './TimerComponentsFormal';
